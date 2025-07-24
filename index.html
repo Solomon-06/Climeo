@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- left sidebar-->
+        <nav class="side-nav">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>Climeo</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="nav-button">
+                        <i class="fas fa-home"></i>
+                        <span>Forecast Feed</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="explore.html" class="nav-button">
+                        <i class="fas fa-search"></i>
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="alerts.html" class="nav-button">
+                        <i class="fas fa-bell"></i>
+                        <span>Weather Alerts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html" class="nav-button">
+                        <i class="fas fa-user"></i>
+                        <span>My Climate</span>
+                    </a>
+                </li>
+                <div class="weather-widget" id="weatherWidget">
+                <div class="weather-loading">Loading weather data...</div>
+            </ul>
+            
+            <button class="glow-button">
+                <span>Post</span>
+                <div class="sparkle-area"></div>
+            </button>
+        </nav>
+        
+        <!-- main -->
+        <main class="content-area">
+            <div class="header">
+                <h1>Home Feed</h1>
+            </div>
+            
+<div class="card">
+  <div class="loader">
+    <p>Fetching</p>
+    <div class="words">
+      <span class="word">clouds</span>
+      <span class="word">sunlight</span>
+      <span class="word">breeze</span>
+      <span class="word">humidity</span>
+      <span class="word">UV index</span>
+
+    </div>
+  </div>
+</div>
+
+
+            <div class="post-creator">
+                <div class="user-avatar" style="background-image: url('https://i.pinimg.com/736x/55/5f/21/555f2152e0275c5ce2522b853680acde.jpg')"></div>
+                <div class="post-input">
+                    <textarea placeholder="Post a Forecast..."></textarea>
+                    <div class="post-actions">
+                        <div class="action-icons">
+                            <i class="fas fa-image"></i>
+                            <i class="fas fa-smile"></i>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <button class="submit-button">Post</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="posts-feed">
+                <div class="post">
+                    <div class="post-author">
+                        <div class="avatar-small" style="background-image: url('https://i.redd.it/zk9evurhdi6c1.jpeg')"></div>
+                        <div class="author-info">
+                            <span class="author-name">Alex
+                                <br>
+                                @dapolarbear
+                            </span>
+                            <span class="post-time">30 mins ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        Away on vacantion! Weather is perfect over here!
+                        <br>
+                        <img src="https://i.ibb.co/2Y8tW6F6/countries-with-beautiful-snow-35.jpg">
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="far fa-comment"></i> 14</span>
+                        <span><i class="fas fa-heart"></i> 56</span>
+                        <span><i class="fas fa-share"></i></span>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post-author">
+                        <div class="avatar-small" style="background-image: url('https://i.pinimg.com/736x/97/fa/57/97fa57bd8b1c02e8214220323554db9b.jpg')"></div>
+                        <div class="author-info">
+                            <span class="author-name">Jack
+                                <br>
+                                @streetracer
+                            </span>
+                            <span class="post-time">43 mins ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        Beautiful day for going out! Going to grab a coffee. What's everyone up to?
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="far fa-comment"></i> 8</span>
+                        <span><i class="fas fa-heart"></i> 42</span>
+                        <span><i class="fas fa-share"></i></span>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-author">
+                        <div class="avatar-small" style="background-image: url('https://i.pinimg.com/736x/14/f5/1f/14f51fcb735a326ad0cc1f343f652c75.jpg')"></div>
+                        <div class="author-info">
+                            <span class="author-name">Mary
+                                <br>
+                                @xxmaryxx
+                            </span>
+                            <span class="post-time">1 hour ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        We have a very rainy day over here. Perfect for relaxing.
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="far fa-comment"></i> 12</span>
+                        <span><i class="fas fa-heart"></i> 33</span>
+                        <span><i class="fas fa-share"></i></span>
+                    </div>
+                </div>
+
+  <div class="post">
+                    <div class="post-author">
+                        <div class="avatar-small" style="background-image: url('https://i.pinimg.com/736x/a9/32/06/a93206400563b466208f506815389ecc.jpg')"></div>
+                        <div class="author-info">
+                            <span class="author-name">Rex
+                                <br>
+                                @rexthedog
+                            </span>
+                            <span class="post-time">1 hour ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                       Took my dog out for a walk!Sun is shining very brightly,wind is blowing,it's a perfect day!
+                       Hope everyone is enjoying it!
+                        <br>
+                        <img src="https://i.ibb.co/hRz5nNx2/dc73c6716fa24da91ec33b6d03306703-34.jpg">
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="far fa-comment"></i> 7</span>
+                        <span><i class="fas fa-heart"></i> 25</span>
+                        <span><i class="fas fa-share"></i></span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </main>
+        
+        <!-- right sidebar -->
+        <aside class="right-sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="Search sunny vibes or stormy chats...">
+                <i class="fas fa-search"></i>
+            </div>
+            
+            <div class="suggestions">
+                <h3>Storm Chasers You Might Like</h3>
+                <div class="suggestion">
+                    <div class="avatar-small" style="background-image: url('https://i.pinimg.com/736x/91/b7/32/91b73222f7a880911452c578e13b0033.jpg')"></div>
+                    <div class="suggestion-info">
+                        <span class="name">Jordan
+                            <br>
+                            @partylifez
+                        </span>
+                        <span class="followers">142 followers</span>
+                    </div>
+                    <button class="follow-button">Follow</button>
+                </div>
+                <div class="suggestion">
+                    <div class="avatar-small" style="background-image: url('https://i.pinimg.com/736x/e8/4e/9b/e84e9bc4bd5944a219081d9e14da6d50.jpg')"></div>
+                    <div class="suggestion-info">
+                        <span class="name">Casey
+                            <br>
+                            @thecase
+                        </span>
+                        <span class="followers">89 followers</span>
+                    </div>
+                    <button class="follow-button">Follow</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+  document.body.className = 'loading-theme';
+
+  const WEATHER_THEMES = {
+    CLEAR: [0],
+    PARTLY_CLOUDY: [1, 2, 3],
+    FOGGY: [45, 48],
+    DRIZZLE: [51, 53, 55],
+    RAINY: [61, 63, 65, 80, 81, 82],
+    SNOWY: [71, 73, 75, 77, 85, 86],
+    THUNDERSTORM: [95, 96, 99],
+    CLOUDY: [56, 57, 66, 67] 
+  };
+
+  const THEME_MAP = {
+    CLEAR: 'sunny-theme',
+    PARTLY_CLOUDY: 'partly-cloudy-theme',
+    FOGGY: 'foggy-theme',
+    DRIZZLE: 'drizzle-theme',
+    RAINY: 'rainy-theme',
+    SNOWY: 'snowy-theme',
+    THUNDERSTORM: 'thunderstorm-theme',
+    CLOUDY: 'cloudy-theme'
+  };
+
+  try {
+    const position = await new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(resolve, reject, {
+        timeout: 5000,
+        maximumAge: 15 * 60 * 1000
+      });
+    }).catch(() => {
+      console.log("Using default location (timeout)");
+      return { coords: { latitude: 40.7128, longitude: -74.0060 } }; 
+    });
+
+    const cacheBuster = new Date().getHours(); 
+    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&current_weather=true&hourly=weathercode&_=${cacheBuster}`;
+    
+    const weatherResponse = await fetch(weatherUrl, {
+      headers: { 'Accept': 'application/json' }
+    });
+    
+    if (!weatherResponse.ok) throw new Error("Weather API failed");
+    const weatherData = await weatherResponse.json();
+
+    const weatherCode = weatherData.current_weather?.weathercode ?? 0;
+    let currentTheme = 'sunny-theme'; 
+    
+    for (const [condition, codes] of Object.entries(WEATHER_THEMES)) {
+      if (codes.includes(weatherCode)) {
+        currentTheme = THEME_MAP[condition];
+        break;
+      }
+    }
+
+    document.body.classList.add('theme-transition');
+    document.body.className = currentTheme;
+    
+    console.log(`Weather code ${weatherCode} → ${currentTheme}`);
+
+    setTimeout(() => {
+      location.reload(); 
+    }, 2 * 60 * 60 * 1000);
+
+  } catch (error) {
+    console.log("Weather detection failed, using time-based theme", error);
+    applyTimeBasedTheme();
+  }
+});
+
+function applyTimeBasedTheme() {
+  const hour = new Date().getHours();
+  let theme = 'sunny-theme';
+  
+  if (hour >= 5 && hour < 10) theme = 'sunrise-theme';
+  else if (hour >= 10 && hour < 17) theme = 'sunny-theme';
+  else if (hour >= 17 && hour < 20) theme = 'sunset-theme';
+  else theme = 'night-theme';
+  
+  document.body.className = theme;
+}
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function setBackgroundBasedOnTime() {
+        const now = new Date();
+        const hours = now.getHours();
+        const textarea = document.querySelector('.post-input textarea');
+
+        textarea.classList.remove('daytime-bg', 'sunset-bg', 'nighttime-bg');
+
+
+        if (hours >= 6 && hours < 10) {
+           
+            textarea.classList.add('sunset-bg');
+        } else if (hours >= 10 && hours < 17) {
+          
+            textarea.classList.add('daytime-bg');
+        } else if (hours >= 17 && hours < 21) {
+            
+            textarea.classList.add('sunset-bg');
+        } else {
+           
+            textarea.classList.add('nighttime-bg');
+        }
+    }
+
+    setBackgroundBasedOnTime();
+    setInterval(setBackgroundBasedOnTime, 60000); 
+});
+</script>
+    
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const weatherWidget = document.getElementById('weatherWidget');
+    if (!weatherWidget || window.innerWidth <= 768) return;
+
+    function updateWeather() {
+        const now = new Date();
+        const hours = now.getHours();
+        
+        weatherWidget.classList.remove('daytime-bg', 'sunset-bg', 'nighttime-bg');
+        
+        if (hours >= 5 && hours < 10) weatherWidget.classList.add('daytime-bg');
+        else if (hours >= 10 && hours < 17) weatherWidget.classList.add('daytime-bg');
+        else if (hours >= 17 && hours < 20) weatherWidget.classList.add('sunset-bg');
+        else weatherWidget.classList.add('nighttime-bg');
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+                const timestamp = Date.now();
+                
+                fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&${timestamp}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const city = data.address.city || data.address.town || data.address.village || "Your Location";
+                        
+                        fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&hourly=temperature_2m,apparent_temperature&timezone=auto&${timestamp}`)
+                            .then(response => response.json())
+                            .then(weatherData => {
+                                const currentTemp = Math.round(weatherData.current_weather.temperature);
+                                const currentTime = new Date();
+                                const currentHour = currentTime.getHours();
+                                
+                                let feelsLikeTemp = currentTemp;
+                                if (weatherData.hourly && weatherData.hourly.apparent_temperature) {
+                                    const timeIndex = weatherData.hourly.time.findIndex(time => 
+                                        new Date(time).getHours() === currentHour
+                                    );
+                                    if (timeIndex !== -1) {
+                                        feelsLikeTemp = Math.round(weatherData.hourly.apparent_temperature[timeIndex]);
+                                    }
+                                }
+                                
+                                weatherWidget.innerHTML = `
+                                    <div class="weather-location">${city}</div>
+                                    <div class="weather-temperature">${currentTemp}°C</div>
+                                    <div class="weather-feels-like">Feels like: ${feelsLikeTemp}°C</div>
+                                    <div class="weather-time">Updated: ${currentTime.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>
+                                `;
+                            })
+                            .catch(() => {
+                                weatherWidget.innerHTML = `
+                                    <div class="weather-error">Weather unavailable</div>
+                                    <div class="weather-time">Updated: ${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>
+                                `;
+                            });
+                    })
+                    .catch(() => {
+                        weatherWidget.innerHTML = `
+                            <div class="weather-error">Location error</div>
+                            <div class="weather-time">Updated: ${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>
+                        `;
+                    });
+            }, () => {
+                weatherWidget.innerHTML = `
+                    <div class="weather-error">Enable location</div>
+                    <div class="weather-time">Updated: ${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>
+                `;
+            });
+        } else {
+            weatherWidget.innerHTML = `
+                <div class="weather-error">No geolocation</div>
+                <div class="weather-time">Updated: ${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>
+            `;
+        }
+    }
+
+    updateWeather();
+    setInterval(updateWeather, 300000);
+});
+</script>
+
+</body>
+</html>
