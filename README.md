@@ -13,6 +13,6 @@ Key features include:
 
 Climeo brings together social interaction and nature’s mood, offering users a refreshing way to connect and share based on their environment.
 
-![Image 1](./https://i.ibb.co/VWsgq524/bandicam-2025-08-12-00-18-48-861.jpg)
-![Image 2](./https://i.ibb.co/krsRHrp/bandicam-2025-08-12-00-20-39-163.jpg)
-![Image 3](./https://i.ibb.co/8Dg6XhgG/bandicam-2025-08-12-00-20-46-273.jpg)
+![Image 1](https://i.ibb.co/VWsgq524/bandicam-2025-08-12-00-18-48-861.jpg)
+![Image 2](https://i.ibb.co/krsRHrp/bandicam-2025-08-12-00-20-39-163.jpg)
+![Image 3](https://i.ibb.co/8Dg6XhgG/bandicam-2025-08-12-00-20-46-273.jpg)
